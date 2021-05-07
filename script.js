@@ -9,6 +9,7 @@ var height = 100 / Math.sqrt(divNum);
 var width = 100 / Math.sqrt(divNum);
 let inputNum = document.querySelector('#inputNum');
 let expNum = document.querySelector('#expNum');
+
 //Color variables
 var i = 0;
 var j = 0;
@@ -106,6 +107,7 @@ inputNum.addEventListener('keyup', popUp)
         container.removeChild(allSquares[d]);
         }
         divNum = newDivNum;
+        inputNum.placeholder = Math.sqrt(divNum);
         console.log(divNum);
         createDivs();
     }
